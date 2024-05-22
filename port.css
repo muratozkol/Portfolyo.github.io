@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Istok+Web');
+
+html, body {
+  font-family: 'Istok Web';
+  background-color: #222;
+}
+
+.nav-items > .navbar-collapse {
+  float: right;
+}
+
+.nav-items > .navbar-brand {
+  float: left;
+}
+
+.title {
+  height: 100vh;
+  background: url('https://i.pinimg.com/originals/04/d2/fc/04d2fc00325f33c20b55451a7618d02a.jpg') center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+  padding-bottom: 150px;
+}
+
+.name {
+  font-size: 36pt;
+}
+
+.about {
+  background-color: #234;
+  color: white;
+  padding: 50px 100px 125px 100px;
+}
+
+.about-row > .col-md-6 > p {
+  line-height: 200%;
+}
+
+.portfolio {
+  background-color: #4e6072;
+  color: white;
+  padding: 50px 50px 50px 50px;
+}
+
+.portfolio > .row > .col-md-4 > img {
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.project-text {
+  width: 100%;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.contact {
+  background-color: #222;
+  color: white;
+}
+
+#contact-methods > li {
+  display: inline;
+  padding: 0px 8px 0px 8px;
+  font-size: 18pt;
+}
+
+.email-col > ul {
+  margin-top: 12px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#contact-methods {
+  text-align: left;
+  margin-top: 5px;
+}
+
+#contact-methods > li > a {
+  color: white;
+}
+
+#email {
+  color: #ccc;
+  font-size: 10pt;
+}
+
+#email:hover {
+  color: #fff;
+ 
+}
+
+
+
+.project img {
+  width: 200px; 
+  height: 450px; 
+  border-radius: 5px; 
+  object-fit: cover; /* görrselin konteynere tam olarak sığmasını sağlar */
+}
+
+.project figcaption {
+  text-align: center;
+}
+.lnkdn{
+  font-size: small;
+}
+.gthb{
+  font-size: small;
+}
+
+
+
+
