@@ -43,10 +43,12 @@ html, body {
   padding: 50px 50px 50px 50px;
 }
 
-.portfolio > .row > .col-md-4 > img {
+.portfolio > .row > .col-md-3 > img {
   margin: 20px auto;
-  max-width: 100%;
-  height: auto;
+  width: 150px; /* Görsellerin genişliğini 150px yap */
+  height: 150px; /* Görsellerin yüksekliğini 150px yap */
+  border-radius: 5px;
+  object-fit: cover; /* Görsellerin konteynere tam olarak sığmasını sağlar */
 }
 
 .project-text {
@@ -91,28 +93,28 @@ ul {
 
 #email:hover {
   color: #fff;
- 
 }
 
-
+.project {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
 .project img {
-  width: 200px; 
-  height: 450px; 
-  border-radius: 5px; 
-  object-fit: cover; /* görrselin konteynere tam olarak sığmasını sağlar */
+  width: 150px; /* Görsellerin genişliğini 150px yap */
+  height: 150px; /* Görsellerin yüksekliğini 150px yap */
+  border-radius: 5px;
+  object-fit: cover; /* Görsellerin konteynere tam olarak sığmasını sağlar */
 }
 
 .project figcaption {
   text-align: center;
 }
-.lnkdn{
+
+.lnkdn {
   font-size: small;
 }
-.gthb{
+
+.gthb {
   font-size: small;
 }
-
-
-
-
