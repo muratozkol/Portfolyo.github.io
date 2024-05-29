@@ -1,5 +1,5 @@
 function createScroller(fromId, toId) {
-  scrollFunc = function() { 
+  return function() { 
       $(fromId).click(function(e) {
           e.preventDefault(); 
           $('html,body').stop().animate({
@@ -7,16 +7,15 @@ function createScroller(fromId, toId) {
           }, 700);
       });
   };
-  return(scrollFunc);
-};
+}
 
 $(document).ready(function() {
   createScroller('#about-nav', '#about-section')();
   createScroller('#projects-nav', '#projects-section')();
   createScroller('#contact-nav', '#contact-section')();
   createScroller('#home-nav','#home')();
-  
-  $('.nav a').on('click', function(){
+
+  $('.nav a').on('click', function() {
       $('.navbar-toggle').click();
   });
 
@@ -27,6 +26,8 @@ $(document).ready(function() {
       modalClone.find('img').attr('src', `Projects/${i}.png`);
       modalClone.find('p').text(`Description for Project ${i}`);
       $('body').append(modalClone);
+
+      // Modalı tetikleyen imajlara data-target ekleyelim
+      $(`.project img[src='${i}.png']`).attr('data-target', `#projectModal${i}`);
   }
 });
-
