@@ -24,7 +24,7 @@ $(document).ready(function() {
       let modalClone = $('#projectModalTemplate').clone();
       modalClone.attr('id', `projectModal${i}`);
       modalClone.find('.modal-title').text(``);
-      modalClone.find('img').attr('src', `Projects/${i}.png`);
+      modalClone.find('img').attr('src', `${i}.png`);
       modalClone.find('p').text(``);
       $('body').append(modalClone);
   }
