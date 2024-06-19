@@ -4,7 +4,10 @@ html, body {
   font-family: 'Istok Web';
   background-color: #222;
 }
-
+#alink{
+  color: white;
+  list-style: none;
+}
 .nav-items > .navbar-collapse {
   float: right;
 }
@@ -30,12 +33,25 @@ html, body {
 .about {
   background-color: #234;
   color: white;
-  padding: 50px 100px 125px 100px;
+  padding: 50px 20px; 
 }
 
-.about-row > .col-md-6 > p {
-  line-height: 200%;
+.about-row > .col-md-12 > p {
+  line-height: 1.8; 
+  text-align: center;
 }
+
+@media (max-width: 768px) {
+  .about {
+    padding: 30px 10px; 
+  }
+
+  .about-row > .col-md-6 > p {
+    width: 100%; 
+    line-height: 1.6; 
+  }
+}
+
 
 .portfolio {
   background-color: #4e6072;
@@ -45,10 +61,10 @@ html, body {
 
 .portfolio > .row > .col-md-3 > img {
   margin: 20px auto;
-  width: 150px; /* Görsellerin genişliğini 150px yap */
-  height: 150px; /* Görsellerin yüksekliğini 150px yap */
+  width: 150px; 
+  height: 150px; 
   border-radius: 5px;
-  object-fit: cover; /* Görsellerin konteynere tam olarak sığmasını sağlar */
+  object-fit: cover; 
 }
 
 .project-text {
@@ -101,10 +117,10 @@ ul {
 }
 
 .project img {
-  width: 150px; /* Görsellerin genişliğini 150px yap */
-  height: 150px; /* Görsellerin yüksekliğini 150px yap */
+  width: 150px; 
+  height: 150px; 
   border-radius: 5px;
-  object-fit: cover; /* Görsellerin konteynere tam olarak sığmasını sağlar */
+  object-fit: cover; 
 }
 
 .project figcaption {
